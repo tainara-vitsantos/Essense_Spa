@@ -1,0 +1,334 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ html {
+     scroll-behavior: smooth;
+     /* Rolagem suave */
+ }
+
+ body {
+     font-family: "Nunito", Helvetica, Arial, sans-serif;
+     color: #000;
+     background: #fff;
+ }
+
+ a {
+     text-decoration: none;
+     color: inherit;
+ }
+
+ ul {
+     list-style: none;
+ }
+
+
+ /* Informações acima do cabeçalho */
+ .superinfo-bg {
+     background: #0c3801;
+     color: #fff;
+ }
+
+ .superinfo {
+     max-width: 960px;
+     margin: 0 auto;
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     padding: 10px;
+     font-size: 0.95em;
+ }
+
+ .superinfo a {
+     color: white;
+ }
+
+
+ img {
+     display: block;
+     max-width: 100%;
+ }
+
+ /*Cabeçalho Menu*/
+ .menu-bg {
+     background: #26b601;
+     /*   
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     z-index: 999; */
+ }
+
+ .menu {
+     max-width: 960px;
+     margin: 0 auto;
+     padding: 15px 10px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     flex-wrap: wrap;
+ }
+
+ .menu-logo a {
+     font-size: 2em;
+     font-weight: 700;
+     color: #fff;
+ }
+
+ .menu-nav ul {
+     display: flex;
+     flex-wrap: wrap;
+ }
+
+ .menu-nav a {
+     color: #fff;
+     font-size: 1.1em;
+     padding: 10px 15px;
+     transition: 0.3s;
+ }
+
+ .menu-nav a:hover {
+     color: #75f300;
+ }
+
+ /*Sobre Introdução*/
+ .introducao {
+     font-size: 2.5em;
+     text-align: center;
+     max-width: 960px;
+     margin: 60px auto 40px;
+     padding: 0 10px;
+     color: #0c3801;
+ }
+
+
+ .sobre {
+     border-top: 2px solid #0c3801;
+     border-bottom: 2px solid #0c3801;
+     max-width: 960px;
+     margin: 0 auto;
+     padding: 60px 0;
+     display: flex;
+     flex-wrap: wrap;
+     gap: 20px;
+ }
+
+ .sobre-info {
+     flex: 2 1 300px;
+     margin: 0 10px;
+ }
+
+ .sobre-info h1 {
+     font-size: 2.5em;
+     margin-bottom: 0.5em;
+     color: #26b601;
+ }
+
+ .sobre-info p {
+     font-size: 1.1em;
+     line-height: 1.6;
+     margin-bottom: 1em;
+     color: #555;
+ }
+
+ .sobre-img {
+     flex: 1 1 250px;
+ }
+
+ /* funcao */
+ .funcoes {
+     max-width: 960px;
+     margin: 60px auto;
+     padding: 0 10px;
+ }
+
+ .funcoes h1 {
+     font-size: 2.5em;
+     color: #26b601;
+     text-align: center;
+     margin-bottom: 40px;
+ }
+
+ .funcoes-container {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 20px;
+     justify-content: center;
+ }
+
+ .funcoes-item {
+     flex: 1 1 280px;
+     background: #f7f7f7;
+     border-radius: 10px;
+     overflow: hidden;
+     text-align: center;
+     transition: transform 0.3s, box-shadow 0.3s;
+ }
+
+ .funcoes-item:hover {
+     transform: scale(1.05);
+     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+ }
+
+ .funcoes-item h2 {
+     font-size: 1.5em;
+     background: #26b601;
+     color: white;
+     padding: 20px;
+ }
+
+ .funcoes-item img {
+     width: 100%;
+     height: 200px;
+     object-fit: cover;
+ }
+
+ /* vantagem*/
+ .vantagens {
+     background: #f7f7f7;
+     padding: 60px 10px;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     gap: 20px;
+ }
+
+ .vantagens-item {
+     flex: 1 1 260px;
+     background: white;
+    /*  border: 2px solid #26b601;  borda */ 
+     border-radius: 12px;
+     padding: 20px;
+     text-align: center;
+     transition: transform 0.3s, box-shadow 0.3s;
+ }
+
+ .vantagens-item:hover {
+     transform: translateY(-8px);
+     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+ }
+
+ .vantagens-item h2 {
+     font-size: 2em;
+     color: #26b601;
+     margin-bottom: 15px;
+ }
+
+ .vantagens-item img {
+     margin: 0 auto 15px;
+     width: 80px;
+ }
+
+ .vantagens-item ul {
+     font-size: 1.1em;
+     color: #555;
+ }
+
+ @media (max-width: 800px) {
+     .vantagens {
+         padding-left: 10px;
+         padding-right: 10px;
+     }
+
+     .vantagens .vantagens-item:nth-child(3) {
+         order: -2;
+     }
+
+     .vantagens .vantagens-item:nth-child(2) {
+         order: -1;
+     }
+ }
+
+
+ /*Newsletter*/
+
+ .newsletter {
+     background: #f7f7f7;
+     padding: 60px calc((100% - 960px) / 2);
+     /* calculando a distancia 100 - conatainer divide pr 2 */
+     display: flex;
+     flex-wrap: wrap;
+ }
+
+ .newsletter-info {
+     flex: 1 1 240px;
+     margin: 0 10px;
+ }
+
+ .newsletter-info h1 {
+     font-size: 2em;
+     color: #a4a4a4;
+ }
+
+ .newsletter-info p {
+     font-size: 1.25em;
+     font-style: italic;
+     max-width: 230px;
+     color: #7c7c7c;
+     margin-bottom: 10px;
+ }
+
+ .newsletter-form {
+     flex: 2 1 260px;
+     margin: 0 10px;
+     align-self: center;
+     display: flex;
+     flex-wrap: wrap;
+ }
+
+ .newsletter-form input {
+     flex: 3 1 260px;
+     font-size: 1.25em;
+     color: #7c7c7c;
+     font-style: italic;
+     font-family: "Nunito", Helvetica, Arial, sans-serif;
+     border: 4px solid #26b601;
+     background: transparent;
+     padding: 15px 10px;
+     margin: 0px;
+     border-radius: 0px;
+ }
+
+ .newsletter-form button {
+     flex: 1 1 260px;
+     font-family: "Nunito", Helvetica, Arial, sans-serif;
+     font-size: 2.25em;
+     font-weight: bold;
+     text-transform: uppercase;
+     background: #26b601;
+     color: white;
+     margin: 0px;
+     cursor: pointer;
+     border: 0px;
+     padding: 15px 10px;
+ }
+
+ .newsletter-form button:hover {
+     background: #1e9600;
+ }
+
+ @media (max-width: 600px) {
+     .newsletter-form button {
+         font-size: 1.5em;
+     }
+ }
+
+
+ /*Footer*/
+
+ .footer {
+     display: flex;
+     background: #26b601;
+     height: 100px;
+     align-items: center;
+ }
+
+ .footer p {
+     flex: 1;
+     text-align: center;
+     font-size: 1.25em;
+     color: #0c3801;
+ }
